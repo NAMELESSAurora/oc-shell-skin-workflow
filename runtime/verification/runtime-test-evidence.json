@@ -1,0 +1,283 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "platform": "Windows x64",
+  "powershell": "Windows PowerShell 5.1",
+  "compiler": ".NET Framework 4.x csc",
+  "dateUtc": "2026-10-04T11:42:45.9641504Z",
+  "runtimeSources": 17,
+  "singleRoleBuild": true,
+  "checks": [
+    {
+      "name": "default-code-only",
+      "status": "passed",
+      "role": "zhuangfangyi",
+      "mode": "code-only",
+      "assetsInjected": false,
+      "companionSha256": "B6777388D61B87CB1ED7621CE701070FF6F61EE1A332A4ACE15E9C2001402599",
+      "statusLineSha256": "9AB5B69297E61A8C532BE12C0EAAD81B0782E00FD8DE1A3059848DD10348196A",
+      "reportPath": "build/runtime/zhuangfangyi/checks/validation-summary.json",
+      "reportSha256": "4073E8398482D3D2E701F846935A41BF57A910DFA1E2CED9ED1744EA735E62A7",
+      "modelRequests": 0,
+      "renderedScriptsParsed": 11,
+      "ifAssetsPresent": {
+        "appearances": null,
+        "bubble": null,
+        "offlineVoices": null,
+        "installPreview": null
+      }
+    },
+    {
+      "name": "new-role-code-only",
+      "status": "passed",
+      "role": "samplepet",
+      "mode": "code-only",
+      "assetsInjected": false,
+      "companionSha256": "1195C301C01CDA664D2F0B0E1E664D3100FA327E524BC12BA12BE8E7FDC45E02",
+      "statusLineSha256": "9D0BE390B57BD046D8AF51D7A70807410D53B2A7F91599FD6CD255588AF58B80",
+      "reportPath": "build/tests/samplepet-runtime/checks/validation-summary.json",
+      "reportSha256": "200F2C7A146518A89A48B4BC24F79A257D6DBDDD71AF32655DBC64410FCBD98B",
+      "modelRequests": 0,
+      "renderedScriptsParsed": 11,
+      "ifAssetsPresent": {
+        "appearances": null,
+        "bubble": null,
+        "offlineVoices": null,
+        "installPreview": null
+      }
+    },
+    {
+      "name": "reviewed-example-offline",
+      "status": "passed",
+      "role": "zhuangfangyi",
+      "mode": "reviewed-assets-offline",
+      "assetsInjected": true,
+      "companionSha256": "C5CAA111A9425BFFE1E328C1765D4309F7285769E72DDB841753407890D3764A",
+      "statusLineSha256": "C70C6AE96BB0EB6B2EE873BD28954119F9B068826FF7294E9D534EDDC5D14190",
+      "reportPath": "build/tests/zhuangfangyi-reviewed-runtime/checks/validation-summary.json",
+      "reportSha256": "057A591755004A16B42701A68E39949330939757F202AB769D14624CFA835D43",
+      "modelRequests": 0,
+      "renderedScriptsParsed": 11,
+      "ifAssetsPresent": {
+        "appearances": [
+          {
+            "ratioPreserved": true,
+            "oldAnimationCleared": true,
+            "style": "bot",
+            "dockGap": 0,
+            "visiblePixelsRetained": true,
+            "persisted": true
+          },
+          {
+            "ratioPreserved": true,
+            "oldAnimationCleared": true,
+            "style": "chibi",
+            "dockGap": 0,
+            "visiblePixelsRetained": true,
+            "persisted": true
+          }
+        ],
+        "bubble": {
+          "bodyHitPoints": 152,
+          "transparentHitPoints": 58,
+          "closeComplete": true,
+          "actionsComplete": true
+        },
+        "offlineVoices": {
+          "lines": 56,
+          "privateMetadataAbsent": true,
+          "ready": 56
+        },
+        "installPreview": {
+          "profiles": 2,
+          "writesToLiveSettings": false,
+          "schemes": 1
+        }
+      }
+    }
+  ],
+  "template": {
+    "status": "passed",
+    "role": "samplepet",
+    "reviewStatus": "draft",
+    "twoUniqueProfileGuids": true,
+    "configurationNamespace": "OCShellSkinWorkflow-SamplePet",
+    "nonemptyDestinationPreserved": true,
+    "invalidIdentifierRejectedBeforeWrite": true,
+    "draftAssetBuildRejectedBeforeWrite": true,
+    "modelRequests": 0
+  },
+  "sourceSnapshot": [
+    {
+      "path": "runtime/native/AppearanceCatalog.cs",
+      "sha256": "3281825EAF848A7E79CE67329F1B8E503389F5257E036F4105E3ED98D2B91EC5"
+    },
+    {
+      "path": "runtime/native/BotFeatures.cs",
+      "sha256": "02B3290A12EC173BE432D1918D32FB8F974857C60453D5FDEE6CE88BBE2CF763"
+    },
+    {
+      "path": "runtime/native/ChatPipeline.cs",
+      "sha256": "4F7880913BCF82B1994C4C9DDA5AABFA29F77389238DDD00C54504BF84E842C9"
+    },
+    {
+      "path": "runtime/native/ClaudeKeys.cs",
+      "sha256": "886501BB251C9D9A6B21B0A7A7FFB95496DB38371D3D53BC93E5BACC3B0AA379"
+    },
+    {
+      "path": "runtime/native/Companion.cs",
+      "sha256": "357F5663D44E2E6AC8061FC6381A26BD4D28BD65F51FD1AD3A3FADE9CF7E1EB5"
+    },
+    {
+      "path": "runtime/native/CompanionAudio.cs",
+      "sha256": "A1935FA4803584527A99730CB99791256E558BDAF493EE159E5AB9716FB4AC42"
+    },
+    {
+      "path": "runtime/native/GelSurface.cs",
+      "sha256": "09EDF235C92B6BF2A6D6543A43D03F53502CD3E0A7A74A23E8D0A0D2654710B0"
+    },
+    {
+      "path": "runtime/native/InteractionVoices.cs",
+      "sha256": "694B90843EE9E553A6FBEF0D94DE1E97D542B221B50F49A8D6ED679D8A276711"
+    },
+    {
+      "path": "runtime/native/NewRolePreview.cs",
+      "sha256": "5AF5047D13D82CCA521F86706A7DDFA4CA192B62C801D0E6D4AEE5054A5E84D8"
+    },
+    {
+      "path": "runtime/native/OCCompanion.cs",
+      "sha256": "1528B781B4A11B8BFCF91171ED5073BE724D76423F5058F212697F18CEB74D3D"
+    },
+    {
+      "path": "runtime/native/OCCompanion.manifest",
+      "sha256": "B6FBEFA62A8CB39E6758F218B91EDC467866D89A7F92920B2DFF1551A3FB6567"
+    },
+    {
+      "path": "runtime/native/PanelDesign.cs",
+      "sha256": "87AA35152EA3C789D537B7021C8AAB40E797DE66CED1FF733DED951E91C2C679"
+    },
+    {
+      "path": "runtime/native/QwenRealtime.cs",
+      "sha256": "8893513B3C8D7580DC20F8A634987840485CF1F192DA7F4EA4FE9AE3072B336B"
+    },
+    {
+      "path": "runtime/native/QwenService.cs",
+      "sha256": "452EDEBF21DA8FD164006D5C7AB90050D2AB55D133AEF81777DC8F7A89ED416F"
+    },
+    {
+      "path": "runtime/native/sources.json",
+      "sha256": "9A4F353FB817E640DEB503D269D060F712384A8D94E479B68D99746F2E6504B2"
+    },
+    {
+      "path": "runtime/native/TerminalBackground.cs",
+      "sha256": "39492D2787865368A718D2B8ADB09BA7C62DD371806B188DC167606F7A3B2205"
+    },
+    {
+      "path": "runtime/native/VoiceBakeJob.cs",
+      "sha256": "E6FD700C02DAFB9936E397548F87F258FB0CFCAC3208DFA40FAC30B2C3D166C2"
+    },
+    {
+      "path": "runtime/native/VoiceSettings.cs",
+      "sha256": "1121B7A98597274CC3EB89F7FA9F2CFE89F09758C6AEDC1AC3FEC76AE7A39AEA"
+    },
+    {
+      "path": "runtime/native/WavePlayback.cs",
+      "sha256": "536A221D90366554BBEF6815C4776E155C2C0DAB7BCC545ACA055610592A07F0"
+    },
+    {
+      "path": "runtime/launchers/安装皮肤.cmd",
+      "sha256": "EB74CEE9BCF3636BC5D6F28C5019FA8C5FF74691F0EFCD99C10CEB84DE0E2C83"
+    },
+    {
+      "path": "runtime/launchers/启动Claude.cmd",
+      "sha256": "D1D48CBEE1C2B4E1A52D516ADAB80BD2E3146C902300B32DEF309DADC1E79B19"
+    },
+    {
+      "path": "runtime/launchers/启动PowerShell.cmd",
+      "sha256": "8694EB72E466928374153289F01B955FCFC8A1A984A7A1129ACDCE8F1BFFC4FB"
+    },
+    {
+      "path": "runtime/launchers/ClaudeKeyEnvironment.ps1",
+      "sha256": "0565FD134E2ECC5E499AB8912D66BAF4E40E7D808B597762B0F22A9123A29509"
+    },
+    {
+      "path": "runtime/launchers/Install-CharacterSkins.ps1",
+      "sha256": "C54E9551655D27DDA9DAB7EAB4387176B586942F0314BDB215E17EA0D3F49829"
+    },
+    {
+      "path": "runtime/launchers/Install-OCCharacterSkins.ps1",
+      "sha256": "EA8B9951A794E8C8577C945FB069B2C7A2313615A1F0434DAB364B574AE125FB"
+    },
+    {
+      "path": "runtime/launchers/OCShell.ps1",
+      "sha256": "30C6932DAFAE2999BFA85B107AC6F1064ECEFD4A0E1C3396E1EC70DBE5C66675"
+    },
+    {
+      "path": "runtime/launchers/OCShell.psm1",
+      "sha256": "201A5803A13CCFE1DABA331B5253123EF2BC5CB0666878AB3830671DFE1D24A5"
+    },
+    {
+      "path": "runtime/launchers/Open-OCClaudeKeys.ps1",
+      "sha256": "3B4B6809E16AA24C3A79CABED85584CCB3ED3D8C82D85C5E30444FEF47C0789E"
+    },
+    {
+      "path": "runtime/launchers/Open-OCVoiceSettings.ps1",
+      "sha256": "72253896EBEE92B50FE4F5931C8E78320D41FC76E822A238A64E15D617CD9BF3"
+    },
+    {
+      "path": "runtime/launchers/Open-PortableTerminal.ps1",
+      "sha256": "23C4D013C2E509E6B02CE5EF458CECECA417E13AC08132471AAB71393C50A973"
+    },
+    {
+      "path": "runtime/launchers/PortableSkinTools.ps1",
+      "sha256": "D17C4CF48370C6B05749D41E51D6E27993B9ACF2CA61D6D2B3ECB1158476614A"
+    },
+    {
+      "path": "runtime/launchers/Start-OCClaude.ps1",
+      "sha256": "0351A87885C0E9AD6AAB6EAF3715774E63CFCBA1FBA43111C8EEF1C909521B38"
+    },
+    {
+      "path": "runtime/launchers/Start-OCPowerShell.ps1",
+      "sha256": "7F3EE844A6CBA7AE6AB3EFCBAC48660E3B5559714CEFF98E43CD8EE95DA9C1E0"
+    },
+    {
+      "path": "runtime/WorkflowTools.psm1",
+      "sha256": "6CFEE379077727844084C3C08A03A9033CB1CCBE02937DB9BA6EA729D2CA5FDE"
+    },
+    {
+      "path": "scripts/New-Character.ps1",
+      "sha256": "396CDDDA92EAEB0BF0378414214502C24165512E5B941669F119961226ED945B"
+    },
+    {
+      "path": "scripts/Build-Runtime.ps1",
+      "sha256": "ED6DAE2D65C245B4B432469A88989EAD82C10398F2F966C6A9D7153049A98528"
+    },
+    {
+      "path": "scripts/Validate-Runtime.ps1",
+      "sha256": "C34EF154E3285C6BCBA78691152D5CBF2BB27BD90D58DCE40D216FFC75274DD2"
+    },
+    {
+      "path": "templates/character-runtime-contract.json",
+      "sha256": "2B0A31BDEF4C05E6165F99BD6E03CF0B859CBCC83A9D5972874A9DB7E7F8E574"
+    },
+    {
+      "path": "docs/RUNTIME.md",
+      "sha256": "2CEB8C9344F485A1C88099D2AA43F0917D1BCAC49DDF042234179F4142F20C84"
+    }
+  ],
+  "privacy": {
+    "personalKeysCopied": false,
+    "cloudVoiceIdsCopied": false,
+    "personalMemoriesCopied": false,
+    "liveConfigurationWritten": false,
+    "installationRun": false,
+    "terminalStarted": false,
+    "modelRequests": 0,
+    "largeAssetsTracked": false
+  },
+  "manualReview": {
+    "defaultDesignBoard": "visually reviewed",
+    "newRoleIdentityAndAudition": "still required",
+    "onlineProviderAndInstalledTerminal": "not tested"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "ApprovedForPreparation": false,
+  "RightsReview": "Replace after manually reviewing source rights and performer permission; public availability alone is not approval.",
+  "Sources": [
+    {
+      "Title": "Replace with the approved short dialogue source",
+      "PublicUrl": "https://example.org/approved-voice-sample",
+      "Speaker": "Replace with the actual approved speaker/character",
+      "Language": "ja",
+      "PermissionNote": "Record permission/license basis and limits; do not paste keys or signed upload/download URLs."
+    }
+  ]
+}

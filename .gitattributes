@@ -1,0 +1,6 @@
+# Preserve exact source bytes referenced by provenance and verification hashes.
+* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+materials/vendor/** whitespace=blank-at-eol,blank-at-eof,cr-at-eol,-space-before-tab
+*.png binary
+*.wav binary
+*.zip binary

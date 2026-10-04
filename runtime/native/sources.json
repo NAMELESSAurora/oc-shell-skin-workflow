@@ -1,0 +1,20 @@
+[
+  "OCCompanion.cs",
+  "Companion.cs",
+  "BotFeatures.cs",
+  "ChatPipeline.cs",
+  "GelSurface.cs",
+  "PanelDesign.cs",
+  "CompanionAudio.cs",
+  "TerminalBackground.cs",
+  "QwenService.cs",
+  "VoiceSettings.cs",
+  "InteractionVoices.cs",
+  "VoiceBakeJob.cs",
+  "WavePlayback.cs",
+  "QwenRealtime.cs",
+  "ClaudeKeys.cs",
+  "AppearanceCatalog.cs",
+  "NewRolePreview.cs",
+  "RoleCatalog.cs"
+]

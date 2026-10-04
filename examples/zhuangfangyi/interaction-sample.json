@@ -1,0 +1,21 @@
+{
+  "Role": "zhuangfangyi",
+  "Language": "ja",
+  "Origin": "Original desktop interaction dialogue; not copied game voice lines. No audio or account bindings included.",
+  "Lines": [
+    {
+      "Id": "zhuangfangyi_touch_01",
+      "Context": "touch",
+      "Japanese": "あ、呼びました？ちょうど、ひと息つこうと思っていたんです。",
+      "Chinese": "啊，叫我了吗？我正好想着歇一会儿。",
+      "Delivery": "沉着清楚的成年女性日常语气，温柔有分寸，熟人之间自然轻松，轻微笑意；正常语速，完整发声，句尾留自然停顿，不喘息、不娇嗔、不额外笑声。"
+    },
+    {
+      "Id": "zhuangfangyi_repeatTouch_01",
+      "Context": "repeatTouch",
+      "Japanese": "はい、聞こえています。今度は、私の話も少し聞いてくれますか？",
+      "Chinese": "嗯，我听到了。这次也稍微听我说一下，好吗？",
+      "Delivery": "沉着清楚的成年女性日常语气，温柔有分寸，熟人之间自然轻松，轻微笑意；正常语速，完整发声，句尾留自然停顿，不喘息、不娇嗔、不额外笑声。"
+    }
+  ]
+}

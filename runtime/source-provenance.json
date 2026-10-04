@@ -1,0 +1,74 @@
+{
+  "source": "tested single-character portable runtime, 2026-10-04",
+  "sourceFiles": [
+    {
+      "path": "native/OCCompanion.cs",
+      "sourceSha256": "9813cbc376bc2747724e526b397cebef1ffbe8879154519911b3461c765db1f4"
+    },
+    {
+      "path": "native/Companion.cs",
+      "sourceSha256": "7bc1de168ce126d1968eccb96a5d4fa89e8db519f6b99fca8a96883da8a10a01"
+    },
+    {
+      "path": "native/BotFeatures.cs",
+      "sourceSha256": "36b584f38d382e911c751d26cb4aa92214630651b3c61471952e3caecee2b6bd"
+    },
+    {
+      "path": "native/ChatPipeline.cs",
+      "sourceSha256": "530ca94063f79c1a149e4dd8402de5c66bdaa3ffc08e582601f621466dcf5cda"
+    },
+    {
+      "path": "native/GelSurface.cs",
+      "sourceSha256": "829e061721f005c4bf784e8e8e4daf1beef1db5286fb90a0400b847975498c5e"
+    },
+    {
+      "path": "native/PanelDesign.cs",
+      "sourceSha256": "725fea4b09e0636484f33238e0f2dc5c58dd9126f4ed70457732752b62274694"
+    },
+    {
+      "path": "native/CompanionAudio.cs",
+      "sourceSha256": "c61d5f74eed82549a24ba4349e7670cac8d7e63c4fea64f220f7345418a83d16"
+    },
+    {
+      "path": "native/TerminalBackground.cs",
+      "sourceSha256": "62ce2a8f1ff80e2806ddd4bc3d93b71f8b26dc58431ef8e81d1e20dcc518661d"
+    },
+    {
+      "path": "native/QwenService.cs",
+      "sourceSha256": "96b82b24c4624ed158c073f2fa85d58ff344a5d84a1a0bf40e3e4a4421420e96"
+    },
+    {
+      "path": "native/VoiceSettings.cs",
+      "sourceSha256": "b9e5e42e956289b4c882ce8b3c43f65a478ae93006059ac3b286f495da8d47cb"
+    },
+    {
+      "path": "native/InteractionVoices.cs",
+      "sourceSha256": "b123137459f559acea679d067bf459d60310ee09b86d5472a2424e2c0bd44846"
+    },
+    {
+      "path": "native/VoiceBakeJob.cs",
+      "sourceSha256": "3a68afecd79b4fd70223d7a2643ab84568f8e799743bf2397a4d9805fc97a3d0"
+    },
+    {
+      "path": "native/WavePlayback.cs",
+      "sourceSha256": "24eea15acceee9276344974b56a07716911df38c9786453ccc620c8c1ae74e0a"
+    },
+    {
+      "path": "native/QwenRealtime.cs",
+      "sourceSha256": "8893513b3c8d7580dc20f8a634987840485cf1f192da7f4ea4fe9ae3072b336b"
+    },
+    {
+      "path": "native/ClaudeKeys.cs",
+      "sourceSha256": "bbf4d80d091c49bc72c25736102edab54195cfd0d6ee109a5988d60488f0b67e"
+    },
+    {
+      "path": "native/AppearanceCatalog.cs",
+      "sourceSha256": "ef2bc2d95a7a2e64499e0e01f9f099914c33ec06c5bc655f1f33b07c58aa0c58"
+    },
+    {
+      "path": "native/NewRolePreview.cs",
+      "sourceSha256": "0171eb98370b3baab09507a1740e64f3077e519a6c60ee798c266c6b32e57aa8"
+    }
+  ],
+  "adaptation": "single-character contract-driven build; no account data, binaries, logs or asset payloads copied"
+}

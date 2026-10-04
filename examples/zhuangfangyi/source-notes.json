@@ -1,0 +1,29 @@
+{
+  "role": "zhuangfangyi",
+  "displayName": "庄方宜 / ゾアン・ファンイ",
+  "researchDate": "2026-10-04",
+  "canonSources": [
+    "https://endfield.hypergryph.com/operator",
+    "https://endfield.gryphline.com/ja-jp/operator",
+    "https://endfield.hypergryph.com/news/9343",
+    "https://endfield.gryphline.com/ja-jp/news/0751"
+  ],
+  "officialVisualReferenceUrl": "https://web.hycdn.cn/endfield/official-v4/_next/static/media/zhuangfy.c6750f9c.png",
+  "eyeLock": {
+    "iris": "teal/jade green",
+    "innerIris": "gold green",
+    "eyeliner": "red pink; not red iris"
+  },
+  "visualIdentity": "Dark teal-black very long hair, red curved horns, pointed ears, white/green technology clothing and black metal waist/arm details",
+  "styleReferences": "Previously approved soft sitting doll and flat simple round-eye Bot style; only text description, no other role images distributed",
+  "preview": {
+    "file": "preview.png",
+    "bytes": 2350400,
+    "sha256": "ac57fd5274501c674949ab1fde3497e7ce94a43984d65bf6d830cfb6655f31d3",
+    "fixtureBalance": true,
+    "fixtureTerminalText": true,
+    "liveDesktopScreenshot": false,
+    "static2DMaterial": "Same baked RGBA rest texture used for offline inspection; does not validate live GPU material"
+  },
+  "rights": "No proof of permission to relicense the character IP or preview under a code license; see docs/SOURCES-AND-RIGHTS.md"
+}

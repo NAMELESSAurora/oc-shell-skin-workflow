@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Manual image-generation planning. This file does not call any generator.",
+  "requiredInputs": [
+    "ROLE_ID",
+    "DISPLAY_NAME",
+    "CURRENT_OFFICIAL_SOURCE_URLS",
+    "CANON_IDENTITY_AND_OUTFIT",
+    "USER_EYE_LOCK",
+    "ROLE_PALETTE",
+    "APPROVED_STYLE_REFERENCE_DESCRIPTIONS"
+  ],
+  "fillRule": "Every {{...}} token must be filled and visually approved before generation. User corrections override mistaken interpretations of small source images.",
+  "outputs": [
+    {
+      "kind": "doll",
+      "path": "assets/{{ROLE_ID}}-doll.png",
+      "transparent": true,
+      "prompt": "Create a seated soft cloth doll of {{DISPLAY_NAME}}. Identity and current outfit: {{CANON_IDENTITY_AND_OUTFIT}}. Eye rule: {{USER_EYE_LOCK}}. Follow {{APPROVED_DOLL_STYLE_DESCRIPTION}}: large rounded head, compact seated body, short round feet, soft cloth surface. Keep all hair, horns and ornaments inside the canvas with at least 16px clear top margin. Preserve outfit construction and character colours {{ROLE_PALETTE}}. True transparent RGBA, no background, no text, no checkerboard. Do not copy unrelated accessories from a style reference."
+    },
+    {
+      "kind": "chibi",
+      "path": "assets/appearances/{{ROLE_ID}}-chibi.png",
+      "transparent": true,
+      "prompt": "Detailed Japanese anime chibi bust of {{DISPLAY_NAME}}. {{CANON_IDENTITY_AND_OUTFIT}}. {{USER_EYE_LOCK}}. Match {{APPROVED_CHIBI_STYLE_DESCRIPTION}} while preserving complete hair and ornaments, proper garment proportions and recognisable face. At least 16px transparent top margin. True RGBA transparency, no rectangular painted background or lettering; no forced angry expression."
+    },
+    {
+      "kind": "bot",
+      "path": "assets/appearances/{{ROLE_ID}}-bot.png",
+      "transparent": true,
+      "prompt": "Simple cute flat two-dimensional Bot bust of {{DISPLAY_NAME}}. {{CANON_IDENTITY_AND_OUTFIT}}. Follow {{APPROVED_BOT_STYLE_DESCRIPTION}}: tilted smooth oval face, minimal pill-shaped round eyes, gentle soft block shadows and small cheeks. Preserve eye colour {{USER_EYE_LOCK}} with simplified eyes. Complete hair, horns and ornaments with at least 16px transparent top margin. No high-detail anime face, no unrelated clothing, true transparent RGBA."
+    },
+    {
+      "kind": "background-character",
+      "path": "work/{{ROLE_ID}}-character.png",
+      "transparent": true,
+      "prompt": "Natural adult-proportion half-body background portrait of {{DISPLAY_NAME}}, primary subject. {{CANON_IDENTITY_AND_OUTFIT}}. {{USER_EYE_LOCK}}. Clean controlled detail, correct hands, low noise, no excessive micro-pattern. Full hair and head ornaments with safe clear space above; lower garment may end at the composition edge. True RGBA, no environment or lettering. Keep proportions coherent; do not stretch the character into a widescreen composition."
+    },
+    {
+      "kind": "background-environment",
+      "path": "work/{{ROLE_ID}}-environment.png",
+      "transparent": false,
+      "prompt": "Independent widescreen environment, no people. Theme {{ROLE_ENVIRONMENT_THEME}} with palette {{ROLE_PALETTE}} and verified setting details {{CANON_ENVIRONMENT_DETAILS}}. Left/middle can support the separately layered character; leave the right upper area quiet and dark enough for terminal text. Extend the existing theme naturally with clear forms, low noise and restrained fine detail. No logos, letters, body fragments or borrowed unrelated character motifs."
+    }
+  ],
+  "requiredHumanChecks": [
+    "Correct current identity and outfit",
+    "User eye correction applied, eyeliner distinct from iris",
+    "Complete hair/horns/ornaments",
+    "Approved doll/chibi/bot styles",
+    "Natural anatomy and proportions",
+    "Clean low-noise details",
+    "True transparency and no painted matte",
+    "Text-safe background and UI layout"
+  ],
+  "assetManifestExample": {
+    "role": "{{ROLE_ID}}",
+    "assets": [
+      {
+        "path": "assets/{{ROLE_ID}}-doll.png",
+        "trueRGBA": true,
+        "minimumMargins": {
+          "top": 16
+        },
+        "transparentCorners": true,
+        "sha256": "{{APPROVED_64_HEX_SHA256}}",
+        "humanArtworkReview": "required"
+      }
+    ]
+  },
+  "superResolution": "Optional separate step. Record tool/model/version/scale/alpha handling; no automatic super-resolution in repository scripts."
+}

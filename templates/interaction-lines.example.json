@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Language": "ja",
+  "Origin": "Original neutral demonstration lines; adapt after writing a reviewed character persona.",
+  "Characters": {
+    "sample": [
+      {
+        "Id": "sample_touch_01",
+        "Context": "touch",
+        "Japanese": "あ、呼びました？ここで聞いていますよ。",
+        "Chinese": "啊，叫我了吗？我在这里听着呢。",
+        "Delivery": "成年角色与熟人自然交谈，语速正常，笑意轻而短，完整发声与句末停顿；不气喘、不耳语、不夸张撒娇。"
+      },
+      {
+        "Id": "sample_dollTouch_01",
+        "Context": "dollTouch",
+        "Japanese": "その子にも、ごあいさつしてくれたんですね。",
+        "Chinese": "你也和那个小家伙打招呼了呢。",
+        "Delivery": "成年角色与熟人自然交谈，语速正常，笑意轻而短，完整发声与句末停顿；不气喘、不耳语、不夸张撒娇。"
+      },
+      {
+        "Id": "sample_squeeze_01",
+        "Context": "squeeze",
+        "Japanese": "少しつぶれましたね。ゆっくり戻してあげましょう。",
+        "Chinese": "稍微压扁了呢，让她慢慢恢复吧。",
+        "Delivery": "成年角色与熟人自然交谈，语速正常，笑意轻而短，完整发声与句末停顿；不气喘、不耳语、不夸张撒娇。"
+      },
+      {
+        "Id": "sample_drag_01",
+        "Context": "drag",
+        "Japanese": "そちらに移るんですね。ゆっくりで大丈夫です。",
+        "Chinese": "要搬到那边呀，慢慢来就好。",
+        "Delivery": "成年角色与熟人自然交谈，语速正常，笑意轻而短，完整发声与句末停顿；不气喘、不耳语、不夸张撒娇。"
+      },
+      {
+        "Id": "sample_release_01",
+        "Context": "release",
+        "Japanese": "落ち着きました。ここで、ひと息つきましょう。",
+        "Chinese": "安稳下来了，在这里歇一会儿吧。",
+        "Delivery": "成年角色与熟人自然交谈，语速正常，笑意轻而短，完整发声与句末停顿；不气喘、不耳语、不夸张撒娇。"
+      },
+      {
+        "Id": "sample_impact_01",
+        "Context": "impact",
+        "Japanese": "あ、びっくりしました。もう大丈夫です。",
+        "Chinese": "啊，吓了一下，现在没事了。",
+        "Delivery": "成年角色与熟人自然交谈，语速正常，笑意轻而短，完整发声与句末停顿；不气喘、不耳语、不夸张撒娇。"
+      },
+      {
+        "Id": "sample_repeatTouch_01",
+        "Context": "repeatTouch",
+        "Japanese": "何度も呼んでくれますね。今のひと言、最後まで聞いてくれます？",
+        "Chinese": "叫了我好多次呢，先听我把这句话说完好吗？",
+        "Delivery": "成年角色与熟人自然交谈，语速正常，笑意轻而短，完整发声与句末停顿；不气喘、不耳语、不夸张撒娇。"
+      }
+    ]
+  }
+}

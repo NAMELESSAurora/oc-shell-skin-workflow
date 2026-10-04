@@ -1,0 +1,23 @@
+{
+  "Sfx": true,
+  "Reactions": true,
+  "Chat": false,
+  "EnableCloudSpeech": false,
+  "Volume": 0.38,
+  "Provider": "beijing",
+  "Endpoint": "http://127.0.0.1:8000/v1/audio/speech",
+  "Model": "qwen-audio-3.1-tts-flash",
+  "WorkspaceId": "",
+  "Voices": {
+    "sample": ""
+  },
+  "References": {},
+  "ReferenceUrls": {},
+  "Clones": {},
+  "Directions": {},
+  "Rates": {
+    "sample": 0.98
+  },
+  "Models": {},
+  "EmotionEnhancement": {}
+}

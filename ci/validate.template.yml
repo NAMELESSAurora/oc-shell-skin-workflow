@@ -1,0 +1,62 @@
+name: Validate reusable workflow
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-tools:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - run: python scripts/Scan-Privacy.py
+      - run: python -m unittest discover -s tests -v
+      - run: python scripts/Package-Workflow.py --output build/source-check.zip --name source-check
+      - run: python scripts/Verify-Archive.py build/source-check.zip
+
+  native-compile:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile core runtime without artwork or user settings
+        shell: powershell
+        run: ./scripts/Build-Runtime.ps1
+      - name: Validate generated registration and isolated settings
+        shell: powershell
+        run: powershell.exe -NoProfile -STA -File ./scripts/Validate-Runtime.ps1 -CodeOnly
+      - name: Compile and check another role skeleton
+        shell: powershell
+        run: |
+          ./scripts/New-Character.ps1 -Id cirole -ProfileName CIRole -DisplayName 'CI example'
+          ./scripts/Build-Runtime.ps1 -ContractPath workspaces/cirole/runtime-contract.json -CodeOnly -OutputDirectory build/cirole
+          powershell.exe -NoProfile -STA -File ./scripts/Validate-Runtime.ps1 -RuntimeRoot build/cirole -CodeOnly
+
+  material-bake:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - run: npm ci
+        working-directory: materials
+      - run: npx playwright install --with-deps chromium
+        working-directory: materials
+      - run: node bake.mjs --role zhuangfangyi --output ../build/ci-material
+        working-directory: materials
+      - name: Verify true transparent output
+        run: |
+          python -c "from PIL import Image; im=Image.open('build/ci-material/zhuangfangyi-gel.png'); assert im.mode=='RGBA'; a=im.getchannel('A'); assert a.getextrema()[0]==0; assert a.getbbox(); assert im.size==(1080,1020); print('RGBA alpha and dimensions passed')"

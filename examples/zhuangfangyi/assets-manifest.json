@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "role": "zhuangfangyi",
+  "assets": [
+    {
+      "path": "examples/zhuangfangyi/preview.png",
+      "kind": "preview",
+      "size": [
+        1920,
+        1080
+      ],
+      "maxBytes": 3145728,
+      "sha256": "ac57fd5274501c674949ab1fde3497e7ce94a43984d65bf6d830cfb6655f31d3",
+      "trueRGBA": false,
+      "humanArtworkReview": "Final approved static design-board, not a live GPU screenshot"
+    }
+  ],
+  "source": "Approved local final production design-board; copied byte-for-byte",
+  "rights": "Character IP belongs to its rights holders. Preview asset is not granted the repository code license.",
+  "fixtureBalance": true,
+  "fixtureTerminalText": true,
+  "static2DMaterialInspection": true
+}

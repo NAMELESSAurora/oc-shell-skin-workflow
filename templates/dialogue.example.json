@@ -1,0 +1,105 @@
+{
+  "name": "{{DISPLAY_NAME}}",
+  "accent": "{{ACCENT_HEX}}",
+  "ink": "{{INK_HEX}}",
+  "paper": "{{PAPER_HEX}}",
+  "paperBottom": "{{PAPER_BOTTOM_HEX}}",
+  "nameColor": "{{NAME_HEX}}",
+  "background": "{{BACKGROUND_HEX}}",
+  "border": "{{BORDER_HEX}}",
+  "wallet": "{{WALLET_HEX}}",
+  "speechSurface": "{{SPEECH_HEX}}",
+  "mutedInk": "{{MUTED_HEX}}",
+  "buttonSurface": "{{BUTTON_HEX}}",
+  "buttonInk": "{{BUTTON_INK_HEX}}",
+  "motif": "{{ROLE_MOTIF}}",
+  "subtitle": "{{NATURAL_SHORT_SUBTITLE}}",
+  "greeting": [
+    "来了。要先聊两句吗？",
+    "这边已经留好位置了。",
+    "刚好想歇一会儿。你呢？",
+    "{{ROLE_SPECIFIC_GREETING}}"
+  ],
+  "touch": [
+    "嗯？叫我了吗？",
+    "有话就说，我听着。",
+    "被你发现我在发呆了。",
+    "{{ROLE_SPECIFIC_TOUCH}}"
+  ],
+  "headPat": [
+    "轻一点，头发要乱了。",
+    "嗯，这样就好。",
+    "等一下，别碰歪{{HEAD_ORNAMENT}}。",
+    "{{ROLE_SPECIFIC_HEAD_PAT}}"
+  ],
+  "cheek": [
+    "脸颊不是按钮呀。",
+    "好啦，我已经转过来了。",
+    "这一下，算你先赢。",
+    "{{ROLE_SPECIFIC_CHEEK}}"
+  ],
+  "dollTouch": [
+    "连这个小小的我也要叫吗？",
+    "她的头发也要理顺哦。",
+    "放在这里，还挺合适。",
+    "{{ROLE_SPECIFIC_DOLL_TOUCH}}"
+  ],
+  "squeeze": [
+    "稍微捏一下就好。",
+    "松一点，让它慢慢弹回来。",
+    "你是想看看有多软吗？",
+    "{{ROLE_SPECIFIC_SQUEEZE}}"
+  ],
+  "drag": [
+    "这是要搬到哪里？",
+    "慢一点，我跟着呢。",
+    "小心{{HAIR_OR_OUTFIT_DETAIL}}，别挂住。",
+    "{{ROLE_SPECIFIC_DRAG}}"
+  ],
+  "release": [
+    "这里就好，谢谢。",
+    "嗯，新位置不错。",
+    "落稳了。接着聊吧。",
+    "{{ROLE_SPECIFIC_RELEASE}}"
+  ],
+  "impact": [
+    "啊，碰到了。",
+    "没事，下次慢一点。",
+    "这里比想象中挤呢。",
+    "{{ROLE_SPECIFIC_IMPACT}}"
+  ],
+  "repeatTouch": [
+    "听见了，让我先说完这句。",
+    "你想叫我好几次呀？",
+    "我在呢，别急。",
+    "{{ROLE_SPECIFIC_REPEAT_TOUCH}}"
+  ],
+  "dock": [
+    "靠在这边，刚刚好。",
+    "这里不会挡住你吧？",
+    "边上很安静，先待一会儿。",
+    "{{ROLE_SPECIFIC_DOCK}}"
+  ],
+  "balance": [
+    "我翻到了刚更新的数字。",
+    "这里记着这次查到的余额。",
+    "账本看过了，数字在下面。",
+    "{{ROLE_SPECIFIC_BALANCE}}"
+  ],
+  "lowBalance": [
+    "这次查到的余额不多了。",
+    "余额放在下面，你自己决定就好。",
+    "需要的话，再打开账户页看看。",
+    "{{ROLE_SPECIFIC_LOW_BALANCE}}"
+  ],
+  "error": [
+    "没查到新结果，稍后再试吧。",
+    "这次没连上，先保留上次记录。",
+    "我还没有新数字，不能乱记。",
+    "{{ROLE_SPECIFIC_ERROR}}"
+  ],
+  "late": [
+    "已经这么晚了，要不要先歇一会儿？",
+    "{{ROLE_SPECIFIC_LATE_GREETING}}"
+  ]
+}

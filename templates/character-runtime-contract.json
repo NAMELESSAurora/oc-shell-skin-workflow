@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "id": "zhuangfangyi",
+  "profileName": "ZhuangFangyi",
+  "displayName": "庄方宜",
+  "familiarName": "庄方宜",
+  "reviewStatus": "reviewed-example",
+  "configurationNamespace": "OCShellSkinWorkflow-ZhuangFangyi",
+  "fragmentNamespace": "OCShellSkinWorkflow-ZhuangFangyi",
+  "defaultAppearance": "chibi",
+  "backgroundFile": "zhuangfangyi-terminal-full-v1-4k.png",
+  "profileGuids": {
+    "claude": "{2fa9ab18-1c64-4cf9-ae60-ee31ae16e210}",
+    "powershell": "{2fa9ab18-1c64-4cf9-ae60-ee31ae16e220}"
+  },
+  "status": {
+    "accent": "#68D2BA",
+    "secondary": "#D5BAAE",
+    "motif": "☁",
+    "soundPitch": 665
+  },
+  "visual": {
+    "ink": "#294D44",
+    "muted": "#6B8D7B",
+    "accent": "#4A8D6F",
+    "paper": "#F0FFF5",
+    "soft": "#D3ECDC",
+    "line": "#ABD2BC",
+    "room": "灯下小憩",
+    "corners": [
+      34,
+      26,
+      34,
+      26
+    ],
+    "stripCorners": [
+      26,
+      18,
+      26,
+      18
+    ]
+  },
+  "firstChat": "来，坐到灯下。有什么想说的，慢慢讲给我听。",
+  "voice": {
+    "model": "qwen-audio-3.1-tts-flash",
+    "direction": "自然成年女性日常日语，沉着清楚，熟悉时温和亲近，少量笑意，正常语速，不喘息、不抢话、不加表演说明。",
+    "rate": 0.98,
+    "expectedOfflineClips": 56,
+    "contexts": [
+      "touch",
+      "dollTouch",
+      "squeeze",
+      "drag",
+      "release",
+      "impact",
+      "repeatTouch"
+    ]
+  },
+  "bubble": {
+    "width": 540,
+    "height": 510,
+    "color": "#e0f3e5",
+    "surface": "snow-plush",
+    "kind": "twin cloud jade ruyi cushion plush",
+    "margin": [
+      90,
+      92,
+      90,
+      90
+    ],
+    "path": "M107,55 C105,28 130,17 154,21 C181,23 194,43 205,51 C224,30 248,29 269,44 C290,29 316,30 335,51 C347,43 360,23 386,21 C412,17 437,29 434,55 C470,48 502,82 503,118 C513,140 514,164 501,185 C520,209 520,244 503,268 C517,291 515,321 499,342 C505,377 481,409 451,416 C443,450 409,467 377,457 C365,483 333,493 310,477 C285,491 257,491 232,477 C208,493 178,483 164,457 C132,467 98,450 90,416 C58,409 35,377 40,342 C24,321 22,291 36,268 C19,244 19,209 38,185 C25,164 26,140 36,118 C37,82 69,48 107,55 Z"
+  },
+  "requiredFiles": [
+    "assets/zhuangfangyi-doll.png",
+    "assets/zhuangfangyi-corner-complete.png",
+    "assets/zhuangfangyi-tab-avatar.png",
+    "assets/appearances/zhuangfangyi-chibi.png",
+    "assets/appearances/zhuangfangyi-bot.png",
+    "assets/backgrounds/zhuangfangyi-terminal-full-v1-4k.png",
+    "assets/materials/zhuangfangyi-gel.png",
+    "assets/fonts/ChillRoundFRegular.ttf",
+    "assets/fonts/OFL-ChillRound.txt",
+    "materials/bubble-shapes.json",
+    "oc-schemes.json",
+    "companion-personas.json",
+    "companion-dialogue.json",
+    "interaction-lines-ja.json",
+    "claude/oc-zhuangfangyi.theme.json"
+  ],
+  "optionalFiles": [
+    "assets/fonts/ChillRoundFBold.ttf",
+    "assets/voice-references/zhuangfangyi.wav"
+  ],
+  "resourcePolicy": {
+    "alpha": "true RGBA for characters and bubble material; no baked background",
+    "background": "3840x2160, aspect-preserving composition",
+    "voiceSidecar": [
+      "role",
+      "id",
+      "ja",
+      "zh",
+      "delivery",
+      "model",
+      "sha256"
+    ],
+    "noCredentialsOrAccountVoiceIds": true,
+    "manualReviewRequiredForNewCharacter": true
+  }
+}

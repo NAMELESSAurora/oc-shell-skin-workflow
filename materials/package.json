@@ -1,0 +1,9 @@
+{
+  "name": "oc-shell-material-authoring",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Offline Three.js r185 authoring; native runtime consumes baked RGBA PNGs.",
+  "dependencies": {"playwright": "1.62.1"},
+  "scripts": {"bake": "node bake.mjs"}
+}

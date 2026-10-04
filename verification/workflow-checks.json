@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "testedDate": "2026-10-04",
+  "platform": "Windows x64, Python 3.12.10, Windows PowerShell 5.1",
+  "localUnitTests": {"passed": 33, "failed": 0, "cloudRequests": 0},
+  "runtime": {
+    "evidence": "runtime/verification/runtime-test-evidence.json",
+    "sourceHashesVerified": 39,
+    "defaultCodeBuild": "passed",
+    "anotherRoleCodeBuild": "passed",
+    "reviewedExampleOfflineBuild": "passed",
+    "offlineClipsReady": 56,
+    "bodyHitPoints": 152,
+    "transparentPassThroughPoints": 58,
+    "installPreviewProfiles": 2,
+    "liveInstallationPerformed": false
+  },
+  "materialBake": {
+    "engine": "Three.js r185 with local Chromium",
+    "role": "zhuangfangyi",
+    "outputDimensions": [1080, 1020],
+    "trueRgbaAlpha": true,
+    "sha256": "BBC9CBE3C3316A538557FD65A825CF0428A7B375E1BBCE73AE69A23A268E0847",
+    "matchesExistingApprovedMaterial": true
+  },
+  "localSuperResolutionFixture": {
+    "engine": "waifu2x-ncnn-vulkan 20250915, models-cunet",
+    "inputDimensions": [48, 32],
+    "outputDimensions": [96, 64],
+    "noiseLevel": -1,
+    "independentAlphaRestoration": true,
+    "sourceModified": false,
+    "outputSha256": "A5894CF2F519E25AFBEE8779C51309AEEF3EAC56D8B90C206AEDADB36A3261AE",
+    "fixtureOnly": true
+  },
+  "existingSkinArchive": {
+    "name": "庄方宜_全套皮肤_2026-10-04.zip",
+    "bytes": 82907637,
+    "files": 239,
+    "manifestedFiles": 238,
+    "sha256": "69DF1375E3DF24EE3E9330F9C65C4B46C420ADA1005926318A9BB12120FDF0E7",
+    "zipCrcPassed": true,
+    "zipFileShaPassed": true
+  },
+  "privateDataIncluded": false,
+  "accountVoiceBindingsIncluded": false,
+  "chatMemoryIncluded": false,
+  "paidModelRequests": 0,
+  "limitations": [
+    "Offline code and resource validation does not certify online provider availability or current prices",
+    "New-role artwork, persona and audition quality require human review",
+    "Static preview balances are fixtures"
+  ]
+}
