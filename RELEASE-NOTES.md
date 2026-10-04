@@ -5,7 +5,7 @@
 附件：
 
 - `OC-Shell-Skin-Workflow-v1.0.0.zip`：工作流脚本、文档、模板、源码、有限预览与文件校验清单。
-- `庄方宜_全套皮肤_2026-10-04.zip`：已完成的独立 PowerShell / Claude Code 皮肤，含三款造型、4K背景、软绒气泡、56条本地日语语音、安装启动入口及可重新编译源码。
+- `ZhuangFangyi-Full-Skin-2026-10-04.zip`：庄方宜已完成的独立 PowerShell / Claude Code 皮肤，含三款造型、4K背景、软绒气泡、56条本地日语语音、安装启动入口及可重新编译源码。附件采用 ASCII 名称，包内中文文件名保留。
 - 两个 ZIP 各有一份 `.sha256`，可先核对归档，再检查包内 `PACKAGE-MANIFEST.json`。
 
 运行成品需 Windows 10/11、Windows Terminal、Windows PowerShell 5.1 与系统 .NET Framework；Claude 模式另需已安装 Claude Code。离线互动语音无需 API Key。新角色生成的是草稿，需要独立制作和人工审核。
