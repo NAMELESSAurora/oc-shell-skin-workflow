@@ -9,11 +9,11 @@
 ```powershell
 python scripts/Scan-Privacy.py
 python -m unittest discover -s tests -v
-python scripts/Package-Workflow.py --output dist/OC-Shell-Skin-Workflow-v1.0.0.zip --name OC-Shell-Skin-Workflow-v1.0.0
-python scripts/Verify-Archive.py dist/OC-Shell-Skin-Workflow-v1.0.0.zip
+python scripts/Package-Workflow.py --output dist/OC-Shell-Skin-Workflow-v1.0.1.zip --name OC-Shell-Skin-Workflow-v1.0.1
+python scripts/Verify-Archive.py dist/OC-Shell-Skin-Workflow-v1.0.1.zip
 ```
 
-打包器使用固定顶层目录/文件白名单；忽略 `build`、`dist`、临时工作区、缓存、依赖目录、EXE 构建输出与运行状态。每个文件都有大小和 SHA256，ZIP 内 CRC 与文件 SHA 会再检查一次，ZIP 外附 `.sha256`。已有归档不会被覆盖。
+打包器使用固定顶层目录/文件白名单，包含根目录 MIT `LICENSE` 和 `NOTICE.md`；忽略 `build`、`dist`、临时工作区、缓存、依赖目录、EXE 构建输出与运行状态。每个文件都有大小和 SHA256，ZIP 内 CRC 与文件 SHA 会再检查一次，ZIP 外附 `.sha256`。已有归档不会被覆盖。
 
 扫描器拒绝常见凭证字面量、私密状态文件和 JSON 中非空的账户音色/工作空间绑定；诊断只打印文件位置和规则，避免回显匹配值。它是发布前的一项检查，发布者仍需审核实际文件清单。`.gitignore` 只影响 Git，不能替代 ZIP 白名单。
 
@@ -29,6 +29,6 @@ python scripts/Verify-Archive.py dist/OC-Shell-Skin-Workflow-v1.0.0.zip
 
 ## GitHub
 
-当前仓库为私有仓库。`ci/validate.template.yml` 提供离线工具测试、Windows 原生源码编译和 Three.js 材质烘焙的 Actions 配置，不填云端 Key，不创建音色，不进行付费合成。当前 GitHub 登录令牌缺少写入工作流的 `workflow` 权限，所以模板尚未放进 `.github/workflows/`；本次采用本地检查。日后拥有该权限再复制模板启用即可。
+当前仓库为公开开源仓库。公开前检查工作区、Git 历史和已有 Release 附件中的凭据、账户绑定及私密状态文件；不能只检查最新提交。`ci/validate.template.yml` 提供离线工具测试、Windows 原生源码编译和 Three.js 材质烘焙的 Actions 配置，不填云端 Key，不创建音色，不进行付费合成。当前 GitHub 登录令牌缺少写入工作流的 `workflow` 权限，所以模板尚未放进 `.github/workflows/`；本次采用本地检查。日后拥有该权限再复制模板启用即可。
 
-Release v1.0.0 附工作流源码 ZIP、庄方宜完整成品 ZIP 及两份 SHA256。日后增加角色时可沿用同一流程，每个成品单独发布，避免将大图和音频不断塞进 Git 历史。手动变更仓库公开状态或分享角色资源时，应按来源说明处理第三方素材。
+Release v1.0.1 附带含 MIT 许可证的工作流源码 ZIP 和 SHA256；原 v1.0.0 的工作流及庄方宜完整成品附件保留。旧源码 ZIP 不包含后来新增的 MIT 文件，许可证以当前仓库和新版源码包为准。日后增加角色时可沿用同一流程，每个成品单独发布，避免将大图和音频不断塞进 Git 历史。角色媒体素材仍须按来源说明处理，公开仓库不将这些素材转换为 MIT 资产。

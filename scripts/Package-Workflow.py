@@ -10,7 +10,7 @@ import zipfile
 from pathlib import Path
 
 TOP_DIRS = {".github", "ci", "docs", "templates", "scripts", "tests", "runtime", "materials", "examples", "verification"}
-TOP_FILES = {"README.md", "NOTICE.md", "requirements.txt", "pyproject.toml", ".gitignore", ".gitattributes", "RELEASE-NOTES.md"}
+TOP_FILES = {"README.md", "LICENSE", "NOTICE.md", "requirements.txt", "pyproject.toml", ".gitignore", ".gitattributes", "RELEASE-NOTES.md"}
 EXCLUDED_PARTS = {"bin", "build", "dist", "__pycache__", "node_modules", ".venv", "backups"}
 
 

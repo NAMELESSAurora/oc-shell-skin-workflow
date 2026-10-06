@@ -32,12 +32,14 @@ class ReleaseWorkflowTests(unittest.TestCase):
             root = Path(temp) / "src"
             root.mkdir()
             (root / "README.md").write_text("example")
+            (root / "LICENSE").write_text("MIT license fixture")
             (root / "build").mkdir()
             (root / "build" / "private.log").write_text("excluded")
             output = Path(temp) / "source.zip"
             load("Package-Workflow").package(root, output, "source")
-            self.assertEqual(load("Verify-Archive").verify(output)["files"], 2)
+            self.assertEqual(load("Verify-Archive").verify(output)["files"], 3)
             with zipfile.ZipFile(output) as archive:
+                self.assertEqual(archive.read("source/LICENSE"), b"MIT license fixture")
                 payloads = {name: archive.read(name) for name in archive.namelist()}
             payloads["source/README.md"] = b"tampered"
             bad = Path(temp) / "bad.zip"

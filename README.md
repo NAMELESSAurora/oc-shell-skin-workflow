@@ -2,9 +2,9 @@
 
 可复用的 Windows PowerShell / Claude Code CLI 角色皮肤工作流：从官方角色资料、图片制作和人设台词，到软绒气泡、桌宠交互、Qwen 语音克隆与本地烘焙，再到独立安装包和发布检查。
 
-这是 [NAMELESSAurora/oc-shell-skin-workflow](https://github.com/NAMELESSAurora/oc-shell-skin-workflow) 的私有仓库。已有皮肤的制作经验整理为脚本、模板和源码，庄方宜作为经过验证的完整示例；下载成品无需先跑制作流程。
+这是 [NAMELESSAurora/oc-shell-skin-workflow](https://github.com/NAMELESSAurora/oc-shell-skin-workflow) 的开源工作流。自编源码、脚本、模板和工作流文档采用 [MIT 许可证](LICENSE)，已有皮肤的制作经验整理为可复用工具，庄方宜作为经过验证的完整示例；下载成品无需先跑制作流程。
 
-[下载完整发布附件](https://github.com/NAMELESSAurora/oc-shell-skin-workflow/releases/tag/v1.0.0) · [制作流程](docs/ART.md) · [人设与对白](docs/PERSONA.md) · [语音流程](docs/VOICE.md) · [原生接入](docs/RUNTIME.md)
+[下载开源工作流 v1.0.1](https://github.com/NAMELESSAurora/oc-shell-skin-workflow/releases/tag/v1.0.1) · [庄方宜完整皮肤](https://github.com/NAMELESSAurora/oc-shell-skin-workflow/releases/tag/v1.0.0) · [制作流程](docs/ART.md) · [人设与对白](docs/PERSONA.md) · [语音流程](docs/VOICE.md) · [原生接入](docs/RUNTIME.md)
 
 ![庄方宜皮肤设计板](examples/zhuangfangyi/preview.png)
 
@@ -78,6 +78,6 @@ python scripts/Scan-Privacy.py
 
 每个角色的形象、对白、语音方向和气泡形状需要单独设计；脚本提供可复用接入与验证，不能自动判断画风、服饰结构、人物神态或声音自然感。已验证的庄方宜素材是完整成品，新角色的 TODO 模板是草稿。
 
-本地 Key 与音色绑定属于自己的运行配置；发布包保留来源与字体许可，不复制个人记录。代码和第三方角色素材的权利范围分别记录，见 [NOTICE.md](NOTICE.md) 和 [来源说明](docs/SOURCES-AND-RIGHTS.md)。
+本地 Key 与音色绑定属于自己的运行配置；发布包保留来源与字体许可，不复制个人记录。MIT 适用于自编代码和工作流文档；角色图片、语音、字体等保留各自权利范围，见 [NOTICE.md](NOTICE.md) 和 [来源说明](docs/SOURCES-AND-RIGHTS.md)。
 
 源码包的整理、校验、文件清单和发布操作见 [PACKAGING.md](docs/PACKAGING.md)。当前 GitHub 登录令牌没有写入 Actions 工作流所需的 `workflow` 权限，因此自动检查配置保留为 `ci/validate.template.yml`，尚未启用；本次构建与测试已在本地执行。具备该权限后，把模板放到 `.github/workflows/validate.yml` 即可启用相同检查。

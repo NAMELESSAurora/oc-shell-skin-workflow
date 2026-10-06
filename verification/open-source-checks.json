@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "repository": "NAMELESSAurora/oc-shell-skin-workflow",
+  "historyBlobsScanned": 98,
+  "historicalJsonScanned": 20,
+  "historyFindings": [],
+  "existingReleaseAssets": [
+    {
+      "name": "OC-Shell-Skin-Workflow-v1.0.0.zip",
+      "bytes": 2981041,
+      "sha256": "017701b2e06634ea7078306c6b4d6e97574d454ce835817111d7798331490092",
+      "members": 96,
+      "textFilesScanned": 92,
+      "crcPassed": true,
+      "findings": []
+    },
+    {
+      "name": "ZhuangFangyi-Full-Skin-2026-10-04.zip",
+      "bytes": 82907637,
+      "sha256": "69df1375e3df24ee3e9330f9c65c4b46c420ada1005926318a9bb12120fdf0e7",
+      "members": 239,
+      "textFilesScanned": 149,
+      "crcPassed": true,
+      "findings": []
+    }
+  ],
+  "publishedChecksumsPassed": true,
+  "offlineUnitTests": 33,
+  "offlineUnitTestsPassed": true,
+  "credentialValuesPrinted": false,
+  "paidApiCalls": false,
+  "scanScope": "Common credential literals, private filenames and JSON account bindings; not a general guarantee that every possible secret is detectable."
+}
